@@ -9,8 +9,8 @@ We are a decentralized marketplace ecosystem that aligns health and wellness inc
 
 ## Habitcoin: a healthy ecosystem powered by Habitcoin
 
-Healthy is not just an AI-native ecosystem but a movement toward a future where your well-being holds real value. Powered by Habitcoin, the first cryptocurrency designed to reward healthier living, Healthy turns everyday actions into meaningful impact. 
+Healthy is not just an AI-native ecosystem but a movement toward a future where your well-being holds real value. Powered by Habitcoin, a digital incentive layer designed to reward healthier living, Healthy turns everyday actions into meaningful impact.  
 
 As you build better habits, you also help build a more ethical, decentralized health economy where data is anonymized, secure, and used for good. With gamified tracking, personalized ethical AI, and a marketplace for wellness, Healthy transforms your progress into purpose. 
 
-Habitcoin’s dynamic economy, driven by data validation, staking, healthy rewards, and community adoption, keeps the value of humanity’s health growing stronger every day.
+Habitcoin’s incentive model, driven by data validation, participation rewards, and community programs and adoption, keeps the value of humanity’s health growing stronger every day.
