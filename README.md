@@ -38,22 +38,9 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 
 ## 📊 Language Distribution by Code Volume (KB)
 
-```text
-                                                KB
-                200   400   600   800  1000  1200  1400  1600  1800  2000 KB
-    TypeScript (30.0%) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━> 1,850 KB
-        Python (24.0%) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━> 1,480 KB
-Solidity / EVM (12.0%) ━━━━━━━━━━━━━━━━━━━━━━━━━━> 740 KB
-    JavaScript (10.0%) ━━━━━━━━━━━━━━━━━━━━> 615 KB
- Rust / Anchor  (8.0%) ━━━━━━━━━━━━━━━━> 490 KB
-        Kotlin  (5.0%) ━━━━━━━━━━━━> 310 KB
-         Swift  (4.0%) ━━━━━━━━━━> 245 KB
-         Shell  (3.0%) ━━━━━━━━> 185 KB
-        Docker  (2.0%) ━━━━━━> 125 KB
-          HTML  (1.0%) ━━━> 60 KB
-           CSS  (1.0%) ━━━> 60 KB
-      Markdown  (1.0%) ━━━> 60 KB
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/healthyinc/.github/main/assets/languages.svg" width="100%" alt="Language Distribution by Code Volume (KB)" />
+</p>
 
 ---
 
