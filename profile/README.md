@@ -19,7 +19,7 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 
 | Project | Technology Stack | Architecture & Overview | Repository Link |
 | :--- | :---: | :--- | :---: |
-| **BioBlock** | ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white) ![EVM](https://img.shields.io/badge/Ethereum_EVM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) | Decentralized Privacy-Preserving Health Data Registry & Smart Contract Verification Engine | Open Research Showcase |
+| **BioBlock** | ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white) ![EVM](https://img.shields.io/badge/Ethereum_EVM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) | Decentralized Privacy-Preserving Health Data Registry & Smart Contract Verification Engine | [**healthyinc/bio-block**](https://github.com/healthyinc/bio-block) |
 
 ---
 
@@ -36,31 +36,33 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 
 ---
 
-## 📊 Language Distribution
+## 📊 Language Distribution by Code Volume (KB)
 
 ```text
-TypeScript     ██████████████ 30%
-Python         ███████████ 24%
-Solidity / EVM ██████ 12%
-JavaScript     █████ 10%
-Rust / Anchor  ████ 8%
-Kotlin         ███ 5%
-Swift          ██ 4%
-Shell          ██ 3%
-Docker         █ 2%
-HTML           █ 1%
-CSS            █ 1%
-Markdown       █ 1%
+                                                KB
+                200   400   600   800  1000  1200  1400  1600  1800  2000
+    TypeScript (30.0%) -------------------------------------------------> 1,850 KB
+        Python (24.0%) ---------------------------------------------> 1,480 KB
+Solidity / EVM (12.0%) --------------------------> 740 KB
+    JavaScript (10.0%) --------------------> 615 KB
+ Rust / Anchor  (8.0%) ----------------> 490 KB
+        Kotlin  (5.0%) ------------> 310 KB
+         Swift  (4.0%) ----------> 245 KB
+         Shell  (3.0%) --------> 185 KB
+        Docker  (2.0%) ------> 125 KB
+          HTML  (1.0%) ---> 60 KB
+           CSS  (1.0%) ---> 60 KB
+      Markdown  (1.0%) ---> 60 KB
 ```
 
 ---
 
-## 📈 Organization Contribution Velocity
+## 📈 Organization Activity History (Weekly Commits)
 
-The heatmap below illustrates organization-wide engineering commit velocity and activity frequency over time across all domain teams:
+The multi-year activity chart below displays weekly commit volume across all engineering domain teams:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/healthyinc/.github/main/assets/activity.svg" width="100%" alt="Healthy Inc Organization Velocity Heatmap" />
+  <img src="https://raw.githubusercontent.com/healthyinc/.github/main/assets/activity.svg" width="100%" alt="Organization Activity History (Weekly Commits)" />
 </p>
 
 ---
@@ -70,6 +72,10 @@ All proprietary production codebases, AI modeling engines, and compliance verifi
 
 ---
 
-## 👥 Organization Contributors & Maintainers
+## 👥 Frequent Contributors & Maintainers
 
-<a href="https://github.com/healthyinc"><img src="https://github.com/healthyinc.png" width="60" height="60" style="border-radius: 50%;" alt="Healthy Inc" /></a>
+<p align="left">
+  <a href="https://github.com/chalinda" title="@chalinda"><img src="https://github.com/chalinda.png" width="48" height="48" style="border-radius: 50%; margin-right: 8px;" alt="@chalinda" /></a>
+  <a href="https://github.com/pradeeban" title="@pradeeban"><img src="https://github.com/pradeeban.png" width="48" height="48" style="border-radius: 50%; margin-right: 8px;" alt="@pradeeban" /></a>
+  <a href="https://github.com/healthyinc" title="@healthyinc"><img src="https://github.com/healthyinc.png" width="48" height="48" style="border-radius: 50%;" alt="@healthyinc" /></a>
+</p>
