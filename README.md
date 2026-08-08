@@ -15,13 +15,21 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 
 ---
 
-## 🏛️ Core Engineering Domains & Capability Matrix
+## 🌐 Public Research & Open-Source Showcase
+
+| Project | Technology Stack | Architecture & Overview | Repository Link |
+| :--- | :---: | :--- | :---: |
+| **BioBlock** | ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white) ![EVM](https://img.shields.io/badge/Ethereum_EVM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) | Decentralized Privacy-Preserving Health Data Registry & Smart Contract Verification Engine | Open Research Showcase |
+
+---
+
+## 🏛️ Anonymized Enterprise Capability Matrix (Private Execution Telemetry)
 
 > Last updated: 2026-08-07 23:50 UTC · Active Ecosystem Capability Overview
 
 | Core Engineering Domain | Technology & Tooling Stack | Domain Scope & Focus | Aggregated Velocity & Activity |
 | :--- | :---: | :--- | :---: |
-| **DeFi & Web3 Tokenomics** | ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![Solana](https://img.shields.io/badge/Solana-14F195?style=flat-square&logo=solana&logoColor=black) | SVM Smart Contracts, Habitcoin Tokenomics, DePIN Rewards & Solana Programs | 🚀 1,850+ Commits<br>🔥 High Activity |
+| **DeFi & Web3 Tokenomics** | ![Solana](https://img.shields.io/badge/Solana_SVM-14F195?style=flat-square&logo=solana&logoColor=black) ![Rust](https://img.shields.io/badge/Rust_Anchor-000000?style=flat-square&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) | SVM Smart Contracts, Habitcoin Tokenomics, DePIN Rewards & Solana Programs | 🚀 1,850+ Commits<br>🔥 High Activity |
 | **Agentic AI & LLM Systems** | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | Multi-Agent Orchestration, Bio-Engine Modeling, Predictive Health Analytics | 🚀 2,420+ Commits<br>🔥 Peak Activity |
 | **HealthTech & Mobile Ecosystem** | ![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white) ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) | Mobile Telehealth App, Android/iOS Wrappers, FHIR/EHR Data Federation | 🚀 3,100+ Commits<br>🔥 High Activity |
 | **Cybersecurity & Compliance** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) ![Markdown](https://img.shields.io/badge/Audit-000000?style=flat-square&logo=markdown&logoColor=white) | Automated Threat Verification Harnesses, HIPAA Zero-Trust Control Enclaves | 🚀 1,060+ Commits<br>🟢 Steady Activity |
@@ -31,16 +39,18 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 ## 📊 Language Distribution
 
 ```text
-TypeScript   ██████████████████ 38%
-Python       ███████████ 24%
-JavaScript   █████ 10%
-Rust         ████ 8%
-Kotlin       ███ 5%
-Swift        ██ 4%
-Shell        ██ 3%
-Docker       ██ 3%
-HTML / CSS   █ 3%
-Markdown     █ 2%
+TypeScript     ██████████████ 30%
+Python         ███████████ 24%
+Solidity / EVM ██████ 12%
+JavaScript     █████ 10%
+Rust / Anchor  ████ 8%
+Kotlin         ███ 5%
+Swift          ██ 4%
+Shell          ██ 3%
+Docker         █ 2%
+HTML           █ 1%
+CSS            █ 1%
+Markdown       █ 1%
 ```
 
 ---
