@@ -39,20 +39,20 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 ## 📊 Language Distribution by Code Volume (KB)
 
 ```text
-                                                KB
-                200   400   600   800  1000  1200  1400  1600  1800  2000
-    TypeScript (30.0%) -------------------------------------------------> 1,850 KB
-        Python (24.0%) ---------------------------------------------> 1,480 KB
-Solidity / EVM (12.0%) --------------------------> 740 KB
-    JavaScript (10.0%) --------------------> 615 KB
- Rust / Anchor  (8.0%) ----------------> 490 KB
-        Kotlin  (5.0%) ------------> 310 KB
-         Swift  (4.0%) ----------> 245 KB
-         Shell  (3.0%) --------> 185 KB
-        Docker  (2.0%) ------> 125 KB
-          HTML  (1.0%) ---> 60 KB
-           CSS  (1.0%) ---> 60 KB
-      Markdown  (1.0%) ---> 60 KB
+                                              Code Volume (KB)
+               200    400    600    800   1000   1200   1400   1600   1800   2000 KB
+   TypeScript  🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨 30.0% (1,850 KB)
+       Python  🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 24.0% (1,480 KB)
+Solidity / EVM  🟪🟪🟪🟪🟪🟪🟪🟪🟪 12.0% (740 KB)
+   JavaScript  🟧🟧🟧🟧🟧🟧🟧 10.0% (615 KB)
+Rust / Anchor  🟥🟥🟥🟥🟥 8.0% (490 KB)
+       Kotlin  🟩🟩🟩 5.0% (310 KB)
+        Swift  🟫🟫 4.0% (245 KB)
+        Shell  🟦🟦 3.0% (185 KB)
+       Docker  🟧 2.0% (125 KB)
+         HTML  🟨 1.0% (60 KB)
+          CSS  🟦 1.0% (60 KB)
+     Markdown  ⬜ 1.0% (60 KB)
 ```
 
 ---
@@ -75,7 +75,7 @@ All proprietary production codebases, AI modeling engines, and compliance verifi
 ## 👥 Frequent Contributors & Maintainers
 
 <p align="left">
-  <a href="https://github.com/chalinda" title="@chalinda"><img src="https://github.com/chalinda.png" width="48" height="48" style="border-radius: 50%; margin-right: 8px;" alt="@chalinda" /></a>
-  <a href="https://github.com/pradeeban" title="@pradeeban"><img src="https://github.com/pradeeban.png" width="48" height="48" style="border-radius: 50%; margin-right: 8px;" alt="@pradeeban" /></a>
-  <a href="https://github.com/healthyinc" title="@healthyinc"><img src="https://github.com/healthyinc.png" width="48" height="48" style="border-radius: 50%;" alt="@healthyinc" /></a>
+  <a href="https://github.com/Chali-healthy" title="Chali (@Chali-healthy)"><img src="https://github.com/Chali-healthy.png" width="56" height="56" style="border-radius: 50%; margin-right: 12px; border: 2px solid #58a6ff;" alt="@Chali-healthy" /></a>
+  <a href="https://github.com/anbhimi" title="Ananth (@anbhimi)"><img src="https://github.com/anbhimi.png" width="56" height="56" style="border-radius: 50%; margin-right: 12px; border: 2px solid #58a6ff;" alt="@anbhimi" /></a>
+  <a href="https://github.com/pradeeban" title="Dr. Pradeeban Kathiravelu (@pradeeban)"><img src="https://github.com/pradeeban.png" width="56" height="56" style="border-radius: 50%; margin-right: 12px; border: 2px solid #58a6ff;" alt="@pradeeban" /></a>
 </p>
