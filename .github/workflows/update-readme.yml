@@ -1,0 +1,38 @@
+name: Update Organization Profile README
+
+on:
+  schedule:
+    - cron: '0 */12 * * *' # Run every 12 hours
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Execute Update Script
+        env:
+          ORG_PROFILE_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
+        run: python .github/scripts/update_readme.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "healthy-autopilot[bot]"
+          git config --global user.email "healthy-autopilot[bot]@users.noreply.github.com"
+          git add profile/README.md
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "chore: dynamically update organization profile statistics [skip ci]"
+            git push
+          else
+            echo "No changes in statistics since last update."
+          fi
