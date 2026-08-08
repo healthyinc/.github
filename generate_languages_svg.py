@@ -21,11 +21,11 @@ def generate_languages_svg():
     
     width = 850
     item_height = 24
-    header_height = 80
+    header_height = 45 # Shifted up since title text is removed from SVG internal
     footer_height = 20
     height = header_height + (len(lang_data) * item_height) + footer_height
     
-    # X-axis scale (0 to 2000 KB across ~550 pixels)
+    # X-axis scale (0 to 2000 KB across ~580 pixels)
     chart_start_x = 220
     chart_max_width = 580
     max_kb = 2000.0
@@ -33,9 +33,8 @@ def generate_languages_svg():
     svg_content = f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="{width}" height="{height}" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
   
-  <!-- Title -->
-  <text x="{width / 2}" y="32" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Language Distribution by Code Volume (KB)</text>
-  <text x="{width / 2}" y="48" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle">KB</text>
+  <!-- Sub-label KB -->
+  <text x="{chart_start_x + (chart_max_width / 2)}" y="22" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle">KB</text>
   
   <!-- Top X-Axis Tick Marks & Axis Line (200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000) -->
   <g fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11">
@@ -45,16 +44,16 @@ def generate_languages_svg():
     ticks = [200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000]
     for t in ticks:
         tx = chart_start_x + (t / max_kb) * chart_max_width
-        svg_content += f'    <text x="{tx:.1f}" y="65" text-anchor="middle">{t}</text>\n'
-        svg_content += f'    <line x1="{tx:.1f}" y1="70" x2="{tx:.1f}" y2="75" stroke="#f0f6fc" stroke-width="1.5"/>\n'
+        svg_content += f'    <text x="{tx:.1f}" y="35" text-anchor="middle">{t}</text>\n'
+        svg_content += f'    <line x1="{tx:.1f}" y1="38" x2="{tx:.1f}" y2="43" stroke="#f0f6fc" stroke-width="1.5"/>\n'
         
     axis_start_x = chart_start_x
     axis_end_x = chart_start_x + chart_max_width
-    svg_content += f'    <line x1="{axis_start_x}" y1="75" x2="{axis_end_x}" y2="75" stroke="#f0f6fc" stroke-width="1.5"/>\n'
-    svg_content += f'    <line x1="{chart_start_x}" y1="75" x2="{chart_start_x}" y2="{height - 15}" stroke="#f0f6fc" stroke-width="1.5"/>\n'
+    svg_content += f'    <line x1="{axis_start_x}" y1="43" x2="{axis_end_x}" y2="43" stroke="#f0f6fc" stroke-width="1.5"/>\n'
+    svg_content += f'    <line x1="{chart_start_x}" y1="43" x2="{chart_start_x}" y2="{height - 15}" stroke="#f0f6fc" stroke-width="1.5"/>\n'
     svg_content += "  </g>\n\n"
     
-    # Horizontal Bars (Solid Orange Theme matching KathiraveluLab: #f0883e / #f97316)
+    # Horizontal Bars (Solid Orange Theme matching KathiraveluLab: #f0883e)
     orange_color = "#f0883e"
     
     svg_content += "  <!-- Language Bars -->\n  <g>\n"
@@ -63,14 +62,14 @@ def generate_languages_svg():
         bar_len = (kb / max_kb) * chart_max_width
         label_str = f"{lang} ({pct:.1f}%)"
         
-        svg_content += f'    <text x="{chart_start_x - 10}" y="{y_pos + 14}" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">{label_str}</text>\n'
-        svg_content += f'    <rect x="{chart_start_x + 1}" y="{y_pos + 3}" width="{bar_len:.1f}" height="15" rx="1" fill="{orange_color}"/>\n'
+        svg_content += f'    <text x="{chart_start_x - 10}" y="{y_pos + 12}" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">{label_str}</text>\n'
+        svg_content += f'    <rect x="{chart_start_x + 1}" y="{y_pos + 1}" width="{bar_len:.1f}" height="15" rx="1" fill="{orange_color}"/>\n'
         
     svg_content += "  </g>\n</svg>\n"
     
     with open("assets/languages.svg", "w", encoding="utf-8") as f:
         f.write(svg_content)
-    print("Successfully generated assets/languages.svg in solid orange theme!")
+    print("Successfully updated assets/languages.svg without internal duplicate title!")
 
 if __name__ == "__main__":
     generate_languages_svg()
