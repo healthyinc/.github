@@ -29,12 +29,6 @@ jobs:
           elif [ -f .github/scripts/update_readme.py ]; then
             python .github/scripts/update_readme.py
           fi
-          if [ -f generate_languages_svg.py ]; then
-            python generate_languages_svg.py
-          fi
-          if [ -f generate_activity_svg.py ]; then
-            python generate_activity_svg.py
-          fi
 
       - name: Commit and Push Changes
         run: |
