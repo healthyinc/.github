@@ -20,7 +20,7 @@ LANGUAGES_SVG_PATH = os.path.join(os.path.dirname(__file__), "../assets/language
 ACTIVITY_SVG_PATH = os.path.join(os.path.dirname(__file__), "../assets/activity.svg")
 
 GRAPHQL_QUERY = """
-query($login: String!, $cursor: String, $since: DateTime) {
+query($login: String!, $cursor: String, $since: GitTimestamp) {
   organization(login: $login) {
     repositories(first: 100, after: $cursor) {
       pageInfo {
