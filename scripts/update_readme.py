@@ -41,7 +41,10 @@ query($login: String!, $cursor: String, $since: GitTimestamp) {
         defaultBranchRef {
           target {
             ... on Commit {
-              history(since: $since) {
+              historyAllTime: history {
+                totalCount
+              }
+              history30Days: history(since: $since) {
                 totalCount
                 nodes {
                   author {
@@ -196,20 +199,27 @@ def fetch_live_stats(token):
             
             domain = classify_repository(repo_name, desc, topics, repo_langs)
             
-            repo_commits = 0
+            repo_commits_30_days = 0
+            repo_commits_all_time = 0
             ref = node.get("defaultBranchRef")
-            if ref and ref.get("target") and "history" in ref["target"]:
-                history = ref["target"]["history"]
-                repo_commits = history["totalCount"]
-                total_commits += repo_commits
-                for commit in history["nodes"]:
-                    author = commit.get("author")
-                    if author and author.get("user"):
-                        username = author["user"]["login"]
-                        if "bot" not in username.lower() and username != "github-actions":
-                            active_devs.add(username)
+            if ref and ref.get("target"):
+                target = ref["target"]
+                
+                if "historyAllTime" in target:
+                    repo_commits_all_time = target["historyAllTime"]["totalCount"]
+                    
+                if "history30Days" in target:
+                    history = target["history30Days"]
+                    repo_commits_30_days = history["totalCount"]
+                    total_commits += repo_commits_30_days
+                    for commit in history["nodes"]:
+                        author = commit.get("author")
+                        if author and author.get("user"):
+                            username = author["user"]["login"]
+                            if "bot" not in username.lower() and username != "github-actions":
+                                active_devs.add(username)
                             
-            domain_commits[domain] += repo_commits
+            domain_commits[domain] += repo_commits_all_time
                             
         has_next_page = repo_data["pageInfo"]["hasNextPage"]
         variables["cursor"] = repo_data["pageInfo"]["endCursor"]
