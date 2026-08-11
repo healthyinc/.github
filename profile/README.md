@@ -38,22 +38,10 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 
 <!-- START_STATS -->
 ### 📈 Global Activity (Last 30 Days)
-*   **Total Commits:** 1,424 commits
-*   **Active Developers:** 6 developers
-*   **Primary Languages:** TypeScript, JavaScript, Rust, Python, Solidity
+*   **Total Commits:** 479 commits
+*   **Active Developers:** 3 developers
+*   **Primary Languages:** JavaScript, HTML, TypeScript, Python, TeX
 
-### 💻 Code Base Language Distribution
-```mermaid
-pie title Language Distribution
-    "TypeScript" : 35.7
-    "JavaScript" : 25.2
-    "Rust" : 19.8
-    "Python" : 11.3
-    "Solidity" : 7.0
-```
-
-> [!NOTE]
-> *Note: These statistics are currently running in Simulated Mode because no API token is configured.*
 <!-- END_STATS -->
 
 ---
