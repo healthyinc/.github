@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"\""
+"""
 update_readme.py
 Updates the healthyinc GitHub profile README with live statistics.
 Supports in-memory aggregation of private repository activity to protect IP.
 Requires ORG_PROFILE_TOKEN to run.
-"\""
+"""
+
 
 import os
 import sys
