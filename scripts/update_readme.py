@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 "\""
 update_readme.py
 Updates the healthyinc GitHub profile README with live statistics.
@@ -267,16 +267,10 @@ def build_stats_markdown(stats):
         
     sorted_langs = sorted(lang_pcts.items(), key=lambda x: x[1], reverse=True)[:5]
     
-    mermaid_pie = "`mermaid\npie title Language Distribution\n"
-    for lang, pct in sorted_langs:
-        mermaid_pie += f'    "{lang}" : {pct:.1f}\n'
-    mermaid_pie += "`"
-    
     stats_md = f"### 📈 Global Activity (Last 30 Days)\n"
     stats_md += f"*   **Total Commits:** {total_commits:,} commits\n"
     stats_md += f"*   **Active Developers:** {active_devs} developers\n"
-    stats_md += f"*   **Primary Languages:** {', '.join([l[0] for l in sorted_langs])}\n\n"
-    stats_md += f"### 💻 Code Base Language Distribution\n{mermaid_pie}\n"
+    stats_md += f"*   **Primary Languages:** {', '.join([l[0] for l in sorted_langs])}\n"
     
     return stats_md
 
