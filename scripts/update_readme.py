@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-"""
-update_readme.py
-Updates the healthyinc GitHub profile README with live statistics.
-Supports in-memory aggregation of private repository activity to protect IP.
-Requires ORG_PROFILE_TOKEN to run.
-"""
-
-
 import os
 import sys
 import json
@@ -30,6 +22,14 @@ query($login: String!, $cursor: String, $since: GitTimestamp) {
       nodes {
         name
         isPrivate
+        description
+        repositoryTopics(first: 10) {
+          nodes {
+            topic {
+              name
+            }
+          }
+        }
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
           edges {
             size
@@ -92,6 +92,61 @@ def fetch_participation_stats(token, repo_name):
         print(f"Failed to fetch participation for {repo_name}: {e}", file=sys.stderr)
         return []
 
+def classify_repository(name, description, topics, languages):
+    scores = {
+        "DeFi & Web3 Tokenomics": 0,
+        "Agentic AI & LLM Systems": 0,
+        "HealthTech & Mobile Ecosystem": 0,
+        "Cybersecurity & Compliance": 0
+    }
+    
+    # Weights
+    name_w = 3
+    desc_w = 1
+    topic_w = 2
+    lang_w = 2
+
+    # Keywords mapping
+    keywords = {
+        "DeFi & Web3 Tokenomics": ["token", "web3", "solana", "evm", "defi", "habitcoin", "bio-block", "depin", "contract", "crypto", "blockchain"],
+        "Agentic AI & LLM Systems": ["ai", "llm", "agent", "model", "intelligence", "data-lab", "harness", "machine learning", "ml", "bmad"],
+        "HealthTech & Mobile Ecosystem": ["app", "mobile", "health", "ui", "react", "hospital", "frontend", "portal", "telehealth"],
+        "Cybersecurity & Compliance": ["security", "threat", "audit", "defense", "posture", "cyber", "zero-trust", "hipaa", "compliance"]
+    }
+    
+    # Lang mapping
+    langs = {
+        "DeFi & Web3 Tokenomics": ["solidity", "rust"],
+        "Agentic AI & LLM Systems": ["python", "jupyter notebook"],
+        "HealthTech & Mobile Ecosystem": ["kotlin", "swift", "java", "dart", "objective-c", "typescript", "javascript"],
+        "Cybersecurity & Compliance": ["shell", "dockerfile", "powershell", "batchfile"]
+    }
+
+    text_to_search = []
+    if name: text_to_search.append((name.lower(), name_w))
+    if description: text_to_search.append((description.lower(), desc_w))
+    for t in topics:
+        text_to_search.append((t.lower(), topic_w))
+
+    for domain, kws in keywords.items():
+        for text, weight in text_to_search:
+            for kw in kws:
+                if kw in text:
+                    scores[domain] += weight
+
+    for lang in languages:
+        l = lang.lower()
+        for domain, l_list in langs.items():
+            if l in l_list:
+                scores[domain] += lang_w
+                
+    # Select max score, default to HealthTech if 0
+    max_domain = max(scores, key=scores.get)
+    if scores[max_domain] == 0:
+        return "HealthTech & Mobile Ecosystem" # Default fallback
+    return max_domain
+
+
 def fetch_live_stats(token):
     since_date = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
     variables = {"login": ORG_NAME, "cursor": None, "since": since_date}
@@ -102,6 +157,13 @@ def fetch_live_stats(token):
     has_solana_repo = False
     repo_names = []
     
+    domain_commits = {
+        "DeFi & Web3 Tokenomics": 0,
+        "Agentic AI & LLM Systems": 0,
+        "HealthTech & Mobile Ecosystem": 0,
+        "Cybersecurity & Compliance": 0
+    }
+    
     has_next_page = True
     while has_next_page:
         result = query_graphql(token, variables)
@@ -111,27 +173,43 @@ def fetch_live_stats(token):
             
         repo_data = result["data"]["organization"]["repositories"]
         for node in repo_data["nodes"]:
-            repo_names.append(node["name"])
+            repo_name = node["name"]
+            repo_names.append(repo_name)
             
-            if "solana" in node["name"].lower() or "svm" in node["name"].lower():
+            if "solana" in repo_name.lower() or "svm" in repo_name.lower():
                 has_solana_repo = True
                 
-            if node["languages"]:
+            repo_langs = []
+            if node.get("languages"):
                 for edge in node["languages"]["edges"]:
                     lang = edge["node"]["name"]
                     size = edge["size"]
                     languages_size[lang] = languages_size.get(lang, 0) + size
+                    repo_langs.append(lang)
             
-            ref = node["defaultBranchRef"]
-            if ref and ref["target"] and "history" in ref["target"]:
+            topics = []
+            if node.get("repositoryTopics"):
+                for topic_node in node["repositoryTopics"]["nodes"]:
+                    topics.append(topic_node["topic"]["name"])
+                    
+            desc = node.get("description") or ""
+            
+            domain = classify_repository(repo_name, desc, topics, repo_langs)
+            
+            repo_commits = 0
+            ref = node.get("defaultBranchRef")
+            if ref and ref.get("target") and "history" in ref["target"]:
                 history = ref["target"]["history"]
-                total_commits += history["totalCount"]
+                repo_commits = history["totalCount"]
+                total_commits += repo_commits
                 for commit in history["nodes"]:
                     author = commit.get("author")
                     if author and author.get("user"):
                         username = author["user"]["login"]
                         if "bot" not in username.lower() and username != "github-actions":
                             active_devs.add(username)
+                            
+            domain_commits[domain] += repo_commits
                             
         has_next_page = repo_data["pageInfo"]["hasNextPage"]
         variables["cursor"] = repo_data["pageInfo"]["endCursor"]
@@ -148,7 +226,8 @@ def fetch_live_stats(token):
         "languages": languages_size,
         "active_devs": len(active_devs) if active_devs else 1,
         "has_solana_repo": has_solana_repo,
-        "weekly_activity": weekly_activity
+        "weekly_activity": weekly_activity,
+        "domain_commits": domain_commits
     }
 
 def generate_languages_svg(languages_size):
@@ -275,7 +354,52 @@ def build_stats_markdown(stats):
     
     return stats_md
 
-def update_readme(stats_md):
+def build_matrix_markdown(domain_commits):
+    current_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    
+    def get_activity_level(commits):
+        if commits > 2000: return "🔥 Peak Activity"
+        elif commits > 1000: return "🔥 High Activity"
+        elif commits > 500: return "🟢 Steady Activity"
+        else: return "⚪ Low Activity"
+
+    md = f"> Last updated: {current_time} · Active Ecosystem Capability Overview\n\n"
+    md += "| Core Engineering Domain | Technology & Tooling Stack | Domain Scope & Focus | Aggregated Velocity & Activity |\n"
+    md += "| :--- | :---: | :--- | :---: |\n"
+    
+    # 1. DeFi
+    c = domain_commits["DeFi & Web3 Tokenomics"]
+    md += f"| **DeFi & Web3 Tokenomics** | ![Solana](https://img.shields.io/badge/Solana_SVM-14F195?style=flat-square&logo=solana&logoColor=black) ![Rust](https://img.shields.io/badge/Rust_Anchor-000000?style=flat-square&logo=rust&logoColor=white) ![EVM](https://img.shields.io/badge/Ethereum_EVM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white) ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) | SVM/EVM Smart Contracts, Habitcoin Tokenomics, DePIN Rewards & Solana Programs | 🚀 {c:,} Commits<br>{get_activity_level(c)} |\n"
+    
+    # 2. Agentic AI
+    c = domain_commits["Agentic AI & LLM Systems"]
+    md += f"| **Agentic AI & LLM Systems** | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | Multi-Agent Orchestration, Bio-Engine Modeling, Predictive Health Analytics | 🚀 {c:,} Commits<br>{get_activity_level(c)} |\n"
+    
+    # 3. HealthTech
+    c = domain_commits["HealthTech & Mobile Ecosystem"]
+    md += f"| **HealthTech & Mobile Ecosystem** | ![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white) ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) | Mobile Telehealth App, Android/iOS Wrappers, FHIR/EHR Data Federation | 🚀 {c:,} Commits<br>{get_activity_level(c)} |\n"
+    
+    # 4. Cybersecurity
+    c = domain_commits["Cybersecurity & Compliance"]
+    md += f"| **Cybersecurity & Compliance** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) ![Markdown](https://img.shields.io/badge/Audit-000000?style=flat-square&logo=markdown&logoColor=white) | Automated Threat Verification Harnesses, HIPAA Zero-Trust Control Enclaves | 🚀 {c:,} Commits<br>{get_activity_level(c)} |\n"
+    
+    return md
+
+def replace_tag_block(content, start_tag, end_tag, replacement):
+    start_idx = content.find(start_tag)
+    end_idx = content.find(end_tag)
+    
+    if start_idx == -1 or end_idx == -1:
+        return content, False
+        
+    new_content = (
+        content[:start_idx + len(start_tag)] + 
+        "\n" + replacement + "\n" + 
+        content[end_idx:]
+    )
+    return new_content, True
+
+def update_readme(stats_md, matrix_md):
     if not os.path.exists(READ_ME_PATH):
         print(f"Error: README.md not found at {READ_ME_PATH}", file=sys.stderr)
         return False
@@ -283,26 +407,20 @@ def update_readme(stats_md):
     with open(READ_ME_PATH, "r", encoding="utf-8") as f:
         content = f.read()
         
-    start_tag = "<!-- START_STATS -->"
-    end_tag = "<!-- END_STATS -->"
-    
-    start_idx = content.find(start_tag)
-    end_idx = content.find(end_tag)
-    
-    if start_idx == -1 or end_idx == -1:
-        print("Error: Target tags not found in README.md", file=sys.stderr)
+    content, ok = replace_tag_block(content, "<!-- START_STATS -->", "<!-- END_STATS -->", stats_md)
+    if not ok:
+        print("Error: Target tags for STATS not found in README.md", file=sys.stderr)
         return False
         
-    new_content = (
-        content[:start_idx + len(start_tag)] + 
-        "\n" + stats_md + "\n" + 
-        content[end_idx:]
-    )
-    
-    with open(READ_ME_PATH, "w", encoding="utf-8") as f:
-        f.write(new_content)
+    content, ok = replace_tag_block(content, "<!-- START_MATRIX -->", "<!-- END_MATRIX -->", matrix_md)
+    if not ok:
+        print("Error: Target tags for MATRIX not found in README.md", file=sys.stderr)
+        return False
         
-    print("README.md successfully updated with new stats.")
+    with open(READ_ME_PATH, "w", encoding="utf-8") as f:
+        f.write(content)
+        
+    print("README.md successfully updated with new stats and matrix.")
     return True
 
 def main():
@@ -319,7 +437,9 @@ def main():
         sys.exit(1)
         
     stats_md = build_stats_markdown(stats)
-    update_readme(stats_md)
+    matrix_md = build_matrix_markdown(stats["domain_commits"])
+    
+    update_readme(stats_md, matrix_md)
     generate_languages_svg(stats["languages"])
     generate_activity_svg(stats["weekly_activity"])
 
