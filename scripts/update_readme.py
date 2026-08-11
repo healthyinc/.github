@@ -105,8 +105,8 @@ def fetch_live_stats(token):
     has_next_page = True
     while has_next_page:
         result = query_graphql(token, variables)
-        if not result or "data" not in result or not result["data"]["organization"]:
-            print("GraphQL query failed.", file=sys.stderr)
+        if not result or "data" not in result or not result["data"].get("organization"):
+            print(f"GraphQL query failed. Raw response: {json.dumps(result)}", file=sys.stderr)
             return None
             
         repo_data = result["data"]["organization"]["repositories"]
