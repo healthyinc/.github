@@ -26,6 +26,7 @@ jobs:
       - name: Execute Update Script
         env:
           ORG_PROFILE_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f scripts/update_readme.py ]; then
             python scripts/update_readme.py
