@@ -242,7 +242,7 @@ def fetch_live_stats(token):
 
 def generate_languages_svg(languages_size):
     os.makedirs(os.path.dirname(LANGUAGES_SVG_PATH), exist_ok=True)
-    sorted_langs = sorted(languages_size.items(), key=lambda x: x[1], reverse=True)[:12]
+    sorted_langs = sorted(languages_size.items(), key=lambda x: x[1], reverse=True)[:25]
     
     width = 850
     item_height = 24
