@@ -37,7 +37,6 @@ def generate_svg():
 """
     
     # Generate 120 weekly bars simulating engineering execution timeline (2024 - 2026)
-    random.seed(2026)
     
     num_weeks = 120
     bar_width = 4.5
