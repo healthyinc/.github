@@ -2,13 +2,13 @@
   <rect width="850" height="220" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
   <text x="30" y="32" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700">Organization Activity History (Last 52 Weeks)</text>
   <g fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">
-    <text x="30" y="55">313</text>
+    <text x="30" y="55">311</text>
     <line x1="60" y1="52" x2="810" y2="52" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="85">234</text>
+    <text x="30" y="85">233</text>
     <line x1="60" y1="82" x2="810" y2="82" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="115">156</text>
+    <text x="30" y="115">155</text>
     <line x1="60" y1="112" x2="810" y2="112" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="145">78</text>
+    <text x="30" y="145">77</text>
     <line x1="60" y1="142" x2="810" y2="142" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
     <text x="30" y="175">0</text>
     <line x1="60" y1="172" x2="810" y2="172" stroke="#30363d" stroke-width="1.5"/>
@@ -27,25 +27,25 @@
     <rect x="364.0" y="171.2" width="10" height="0.8" fill="#39d353" rx="1"/>
     <rect x="378.0" y="170.8" width="10" height="1.2" fill="#39d353" rx="1"/>
     <rect x="504.0" y="169.3" width="10" height="2.7" fill="#39d353" rx="1"/>
-    <rect x="518.0" y="162.8" width="10" height="9.2" fill="#39d353" rx="1"/>
-    <rect x="532.0" y="156.7" width="10" height="15.3" fill="#39d353" rx="1"/>
-    <rect x="546.0" y="129.8" width="10" height="42.2" fill="#39d353" rx="1"/>
-    <rect x="560.0" y="95.3" width="10" height="76.7" fill="#39d353" rx="1"/>
-    <rect x="574.0" y="148.6" width="10" height="23.4" fill="#39d353" rx="1"/>
-    <rect x="602.0" y="142.9" width="10" height="29.1" fill="#39d353" rx="1"/>
-    <rect x="616.0" y="60.1" width="10" height="111.9" fill="#39d353" rx="1"/>
+    <rect x="518.0" y="162.7" width="10" height="9.3" fill="#39d353" rx="1"/>
+    <rect x="532.0" y="156.6" width="10" height="15.4" fill="#39d353" rx="1"/>
+    <rect x="546.0" y="129.6" width="10" height="42.4" fill="#39d353" rx="1"/>
+    <rect x="560.0" y="94.8" width="10" height="77.2" fill="#39d353" rx="1"/>
+    <rect x="574.0" y="148.5" width="10" height="23.5" fill="#39d353" rx="1"/>
+    <rect x="602.0" y="142.7" width="10" height="29.3" fill="#39d353" rx="1"/>
+    <rect x="616.0" y="60.9" width="10" height="111.1" fill="#39d353" rx="1"/>
     <rect x="630.0" y="52.0" width="10" height="120.0" fill="#39d353" rx="1"/>
-    <rect x="644.0" y="161.3" width="10" height="10.7" fill="#39d353" rx="1"/>
+    <rect x="644.0" y="161.2" width="10" height="10.8" fill="#39d353" rx="1"/>
     <rect x="658.0" y="169.7" width="10" height="2.3" fill="#39d353" rx="1"/>
-    <rect x="672.0" y="131.0" width="10" height="41.0" fill="#39d353" rx="1"/>
-    <rect x="686.0" y="113.7" width="10" height="58.3" fill="#39d353" rx="1"/>
-    <rect x="700.0" y="127.5" width="10" height="44.5" fill="#39d353" rx="1"/>
-    <rect x="714.0" y="55.1" width="10" height="116.9" fill="#39d353" rx="1"/>
+    <rect x="672.0" y="131.5" width="10" height="40.5" fill="#39d353" rx="1"/>
+    <rect x="686.0" y="113.4" width="10" height="58.6" fill="#39d353" rx="1"/>
+    <rect x="700.0" y="127.2" width="10" height="44.8" fill="#39d353" rx="1"/>
+    <rect x="714.0" y="54.3" width="10" height="117.7" fill="#39d353" rx="1"/>
   </g>
   <g transform="translate(60, 192)" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">
     <text x="0">1 Year Ago</text>
     <text x="375" text-anchor="middle">6 Months Ago</text>
     <text x="750" text-anchor="end">Now</text>
   </g>
-  <text x="30" y="215" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-08-15 12:19:10 UTC</text>
+  <text x="30" y="215" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-08-15 18:15:10 UTC</text>
 </svg>
