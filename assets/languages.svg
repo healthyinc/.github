@@ -27,25 +27,25 @@
   </g>
 
   <g>
-    <text x="210" y="57" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">HTML (34.4%)</text>
+    <text x="210" y="57" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">HTML (33.7%)</text>
     <rect x="221" y="46" width="580.0" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="81" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">JavaScript (33.7%)</text>
-    <rect x="221" y="70" width="569.3" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="105" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Rust (8.6%)</text>
-    <rect x="221" y="94" width="144.9" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="129" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">TypeScript (7.3%)</text>
-    <rect x="221" y="118" width="123.6" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="153" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Python (6.7%)</text>
-    <rect x="221" y="142" width="113.5" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="177" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">TeX (3.9%)</text>
+    <text x="210" y="81" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">JavaScript (33.1%)</text>
+    <rect x="221" y="70" width="569.4" height="15" rx="1" fill="#f0883e"/>
+    <text x="210" y="105" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">TypeScript (8.6%)</text>
+    <rect x="221" y="94" width="147.2" height="15" rx="1" fill="#f0883e"/>
+    <text x="210" y="129" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Rust (8.4%)</text>
+    <rect x="221" y="118" width="144.9" height="15" rx="1" fill="#f0883e"/>
+    <text x="210" y="153" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Python (6.4%)</text>
+    <rect x="221" y="142" width="110.4" height="15" rx="1" fill="#f0883e"/>
+    <text x="210" y="177" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">TeX (3.8%)</text>
     <rect x="221" y="166" width="65.9" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="201" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Go (2.3%)</text>
-    <rect x="221" y="190" width="38.2" height="15" rx="1" fill="#f0883e"/>
+    <text x="210" y="201" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Go (2.9%)</text>
+    <rect x="221" y="190" width="49.1" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="225" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">CSS (0.9%)</text>
-    <rect x="221" y="214" width="14.4" height="15" rx="1" fill="#f0883e"/>
+    <rect x="221" y="214" width="15.0" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="249" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Shell (0.6%)</text>
     <rect x="221" y="238" width="10.9" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="273" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">HCL (0.5%)</text>
+    <text x="210" y="273" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">HCL (0.4%)</text>
     <rect x="221" y="262" width="7.6" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="297" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Kotlin (0.4%)</text>
     <rect x="221" y="286" width="6.2" height="15" rx="1" fill="#f0883e"/>
@@ -61,6 +61,6 @@
     <rect x="221" y="406" width="1.1" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="441" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Dockerfile (0.0%)</text>
     <rect x="221" y="430" width="0.5" height="15" rx="1" fill="#f0883e"/>
-  <text x="30" y="468" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-08-18 18:23:00 UTC</text>
+  <text x="30" y="468" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-08-19 00:41:05 UTC</text>
   </g>
 </svg>
