@@ -27,23 +27,23 @@
   </g>
 
   <g>
-    <text x="210" y="57" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">JavaScript (56.5%)</text>
+    <text x="210" y="57" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">JavaScript (54.1%)</text>
     <rect x="221" y="46" width="580.0" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="81" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">TypeScript (16.0%)</text>
-    <rect x="221" y="70" width="164.2" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="105" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Python (11.2%)</text>
-    <rect x="221" y="94" width="114.7" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="129" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Go (7.5%)</text>
-    <rect x="221" y="118" width="76.6" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="153" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">TeX (1.7%)</text>
+    <text x="210" y="81" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">TypeScript (15.9%)</text>
+    <rect x="221" y="70" width="170.6" height="15" rx="1" fill="#f0883e"/>
+    <text x="210" y="105" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Go (10.7%)</text>
+    <rect x="221" y="94" width="115.0" height="15" rx="1" fill="#f0883e"/>
+    <text x="210" y="129" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Python (10.7%)</text>
+    <rect x="221" y="118" width="114.7" height="15" rx="1" fill="#f0883e"/>
+    <text x="210" y="153" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">TeX (1.6%)</text>
     <rect x="221" y="142" width="17.5" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="177" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">CSS (1.5%)</text>
+    <text x="210" y="177" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">CSS (1.4%)</text>
     <rect x="221" y="166" width="15.4" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="201" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Shell (1.1%)</text>
+    <text x="210" y="201" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Shell (1.0%)</text>
     <rect x="221" y="190" width="11.0" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="225" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">HTML (1.0%)</text>
     <rect x="221" y="214" width="10.4" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="249" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">HCL (0.8%)</text>
+    <text x="210" y="249" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">HCL (0.7%)</text>
     <rect x="221" y="238" width="7.8" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="273" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Rust (0.7%)</text>
     <rect x="221" y="262" width="7.3" height="15" rx="1" fill="#f0883e"/>
@@ -51,7 +51,7 @@
     <rect x="221" y="286" width="6.1" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="321" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Kotlin (0.5%)</text>
     <rect x="221" y="310" width="5.3" height="15" rx="1" fill="#f0883e"/>
-    <text x="210" y="345" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Batchfile (0.5%)</text>
+    <text x="210" y="345" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Batchfile (0.4%)</text>
     <rect x="221" y="334" width="4.6" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="369" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">PowerShell (0.3%)</text>
     <rect x="221" y="358" width="2.9" height="15" rx="1" fill="#f0883e"/>
@@ -61,6 +61,6 @@
     <rect x="221" y="406" width="0.9" height="15" rx="1" fill="#f0883e"/>
     <text x="210" y="441" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">Dockerfile (0.0%)</text>
     <rect x="221" y="430" width="0.5" height="15" rx="1" fill="#f0883e"/>
-  <text x="30" y="468" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-08-24 00:42:20 UTC</text>
+  <text x="30" y="468" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-08-24 06:37:47 UTC</text>
   </g>
 </svg>
