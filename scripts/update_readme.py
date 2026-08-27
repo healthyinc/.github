@@ -118,10 +118,10 @@ def classify_repository(name, description, topics, languages):
     }
     
     keywords = {
-        "DeFi & Web3 Tokenomics": ["token", "web3", "solana", "evm", "defi", "habitcoin", "bioblock", "bio-block", "depin", "contract", "crypto", "blockchain", "shadow", "eclipse", "circom", "zk"],
-        "Agentic AI & LLM Systems": ["ai", "llm", "agent", "model", "intelligence", "data-lab", "harness", "machine learning", "ml", "bmad", "golang", "go"],
-        "HealthTech & Mobile Ecosystem": ["app", "mobile", "health", "ui", "react", "hospital", "frontend", "portal", "telehealth", "fhir", "hl7", "expo"],
-        "Cybersecurity & Compliance": ["security", "threat", "audit", "defense", "posture", "cyber", "zero-trust", "hipaa", "compliance", "nitro", "enclave"]
+        "DeFi & Web3 Tokenomics": ["token", "web3", "solana", "evm", "defi", "habitcoin", "bioblock", "bio-block", "depin", "contract", "crypto", "blockchain", "shadow", "eclipse", "circom", "zk", "anchor", "erc"],
+        "Agentic AI & LLM Systems": ["ai", "llm", "agent", "model", "intelligence", "data-lab", "harness", "machine learning", "ml", "bmad", "golang", "go", "ido", "rag", "orchestrat", "reconnaissance"],
+        "HealthTech & Mobile Ecosystem": ["app-mvp", "hospital", "telehealth", "fhir", "hl7", "expo", "customer-demo", "mvp-demo", "portal", "patient"],
+        "Cybersecurity & Compliance": ["security", "threat", "audit", "defense", "posture", "cyber", "zero-trust", "hipaa", "compliance", "nitro", "enclave", "deployment"]
     }
     
     langs = {
