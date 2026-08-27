@@ -26,24 +26,27 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 ## 🏛️ Anonymized Enterprise Capability Matrix (Private Execution Telemetry)
 
 <!-- START_MATRIX -->
-> Last updated: 2026-08-26 19:39 UTC · Active Ecosystem Capability Overview
+> Last updated: 2026-08-27 04:39 UTC · Active Ecosystem Capability Overview
 
-| Core Engineering Domain | Technology & Tooling Stack | Domain Scope & Focus | Aggregated Velocity & Activity |
-| :--- | :---: | :--- | :---: |
-| **DeFi & Web3 Tokenomics** | ![Solana](https://img.shields.io/badge/Solana_SVM-14F195?style=flat-square&logo=solana&logoColor=black) ![Rust](https://img.shields.io/badge/Rust_Anchor-000000?style=flat-square&logo=rust&logoColor=white) ![EVM](https://img.shields.io/badge/Ethereum_EVM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white) ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) | SVM/EVM Smart Contracts, Habitcoin Tokenomics, DePIN Rewards & Solana Programs | 🚀 406 Commits<br>⚪ Low Activity |
-| **Agentic AI & LLM Systems** | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | Multi-Agent Orchestration, Bio-Engine Modeling, Predictive Health Analytics | 🚀 309 Commits<br>⚪ Low Activity |
-| **HealthTech & Mobile Ecosystem** | ![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white) ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) | Mobile Telehealth App, Android/iOS Wrappers, FHIR/EHR Data Federation | 🚀 848 Commits<br>🟢 Steady Activity |
-| **Cybersecurity & Compliance** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) ![Markdown](https://img.shields.io/badge/Audit-000000?style=flat-square&logo=markdown&logoColor=white) | Automated Threat Verification Harnesses, HIPAA Zero-Trust Control Enclaves | 🚀 879 Commits<br>🟢 Steady Activity |
+| Core Engineering Domain | Technology & Tooling Stack | Domain Scope & Focus | Lifetime Commits | 30-Day Velocity |
+| :--- | :---: | :--- | :---: | :---: |
+| **DeFi & Web3 Tokenomics** | ![Solana](https://img.shields.io/badge/Solana_SVM-14F195?style=flat-square&logo=solana&logoColor=black) ![Rust Anchor](https://img.shields.io/badge/Rust_Anchor-000000?style=flat-square&logo=rust&logoColor=white) ![Eclipse SVM](https://img.shields.io/badge/Eclipse_SVM-000000?style=flat-square&logo=e&logoColor=14F195) ![Shadow Drive](https://img.shields.io/badge/Shadow_DePIN-7E57C2?style=flat-square&logo=serverless&logoColor=white) ![Ethereum EVM](https://img.shields.io/badge/Ethereum_EVM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white) ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white) ![Circom ZK](https://img.shields.io/badge/Circom_ZK-FF5722?style=flat-square&logo=webassembly&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) | SVM/EVM Smart Contracts, Habitcoin Tokenomics, DePIN Storage & Circom ZK Circuits | 📦 471 Commits | 🚀 179 Commits<br>🟢 Steady Activity |
+| **Agentic AI & LLM Systems** | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) ![Go](https://img.shields.io/badge/Go_Lang-00ADD8?style=flat-square&logo=go&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![BMAD Orchestrator](https://img.shields.io/badge/BMAD_Agentic-6A1B9A?style=flat-square&logo=target&logoColor=white) ![vLLM Inference](https://img.shields.io/badge/vLLM-4CAF50?style=flat-square&logo=openai&logoColor=white) | Multi-Agent Orchestration, Bio-Engine Modeling, Predictive Health Analytics & Go Microservices | 📦 268 Commits | 🚀 140 Commits<br>🟢 Steady Activity |
+| **HealthTech & Mobile Ecosystem** | ![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black) ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![FHIR / HL7](https://img.shields.io/badge/FHIR_HL7-E91E63?style=flat-square&logo=health-icons&logoColor=white) | Mobile Telehealth App, Android/iOS Wrappers, FHIR/EHR Data Federation & Clinical Portals | 📦 833 Commits | 🚀 258 Commits<br>🔥 High Activity |
+| **Cybersecurity & Compliance** | ![AWS Nitro](https://img.shields.io/badge/Nitro_Enclaves-FF9900?style=flat-square&logo=amazon-aws&logoColor=white) ![TLS 1.3](https://img.shields.io/badge/TLS_1.3_mTLS-0288D1?style=flat-square&logo=letsencrypt&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) ![HIPAA Zero-Trust](https://img.shields.io/badge/HIPAA_Zero--Trust-000000?style=flat-square&logo=shield&logoColor=white) | Automated Threat Verification Harnesses, HIPAA Zero-Trust Control Enclaves & Hardware Isolation | 📦 881 Commits | 🚀 392 Commits<br>🔥 High Activity |
 
 <!-- END_MATRIX -->
 
 ---
 
 <!-- START_STATS -->
-### 📈 Global Activity (Last 30 Days)
-*   **Total Commits:** 967 commits
-*   **Active Developers:** 3 developers
-*   **Primary Languages:** JavaScript, TypeScript, Python, Go, TeX
+### 📈 Global Ecosystem Activity & Infrastructure
+*   **Total Repositories:** 41 Repositories (38 Private, 3 Public)
+*   **Organization Members:** 11 Active Members
+*   **Total Lifetime Commits:** 2,453 Cumulative Commits
+*   **Rolling 30-Day Velocity:** 969 Commits across active sprints
+*   **Active Developers:** 3 Core Contributors
+*   **Primary Languages:** JavaScript, TypeScript, Go, Python, TeX, CSS, Rust, Shell
 
 <!-- END_STATS -->
 
