@@ -159,6 +159,7 @@ BADGE_LIBRARY = {
     "rust": '![Rust Anchor](https://img.shields.io/badge/Rust_Anchor-000000?style=flat-square&logo=rust&logoColor=white)',
     "wormhole": '![Wormhole](https://img.shields.io/badge/Wormhole_Bridge-000000?style=flat-square&logo=circle&logoColor=00FFFF)',
     "tlsnotary": '![TLSNotary](https://img.shields.io/badge/TLSNotary_zkTLS-3F51B5?style=flat-square&logo=letsencrypt&logoColor=white)',
+    "chainlink": '![Chainlink](https://img.shields.io/badge/Chainlink_Oracle-375BD2?style=flat-square&logo=chainlink&logoColor=white)',
     "ethereum": '![Ethereum EVM](https://img.shields.io/badge/Ethereum_EVM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)',
     "solidity": '![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)',
     "typescript": '![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white)',
@@ -439,7 +440,7 @@ def build_matrix_markdown(stats):
     # 1. DeFi
     cl = c_life["DeFi & Web3 Tokenomics"]
     c30 = c_30["DeFi & Web3 Tokenomics"]
-    defi_badges = f"{BADGE_LIBRARY['solana']} {BADGE_LIBRARY['rust']} {BADGE_LIBRARY['eclipse']} {BADGE_LIBRARY['shadow']} {BADGE_LIBRARY['wormhole']} {BADGE_LIBRARY['tlsnotary']} {BADGE_LIBRARY['ethereum']} {BADGE_LIBRARY['solidity']} {BADGE_LIBRARY['circom']} {BADGE_LIBRARY['typescript']}"
+    defi_badges = f"{BADGE_LIBRARY['solana']} {BADGE_LIBRARY['rust']} {BADGE_LIBRARY['eclipse']} {BADGE_LIBRARY['shadow']} {BADGE_LIBRARY['chainlink']} {BADGE_LIBRARY['wormhole']} {BADGE_LIBRARY['tlsnotary']} {BADGE_LIBRARY['ethereum']} {BADGE_LIBRARY['solidity']} {BADGE_LIBRARY['circom']} {BADGE_LIBRARY['typescript']}"
     md += f"| **DeFi & Web3 Tokenomics** | {defi_badges} | SVM/EVM Smart Contracts, Habitcoin Tokenomics, DePIN Storage & Circom ZK Circuits | 📦 {cl:,} Commits | 🚀 {c30:,} Commits<br>{get_activity_level(c30)} |\n"
     
     # 2. Agentic AI
