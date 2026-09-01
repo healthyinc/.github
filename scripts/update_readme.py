@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 
 ORG_NAME = "healthyinc"
 READ_ME_PATH = os.path.join(os.path.dirname(__file__), "../profile/README.md")
+ROOT_README_PATH = os.path.join(os.path.dirname(__file__), "../README.md")
 LANGUAGES_SVG_PATH = os.path.join(os.path.dirname(__file__), "../assets/languages.svg")
 ACTIVITY_SVG_PATH = os.path.join(os.path.dirname(__file__), "../assets/activity.svg")
 
@@ -502,7 +503,11 @@ def update_readme(stats_md, matrix_md):
     with open(READ_ME_PATH, "w", encoding="utf-8") as f:
         f.write(content)
         
-    print("README.md successfully updated with new stats and matrix.")
+    if os.path.exists(ROOT_README_PATH):
+        with open(ROOT_README_PATH, "w", encoding="utf-8") as f:
+            f.write(content)
+            
+    print("README.md (both profile/ and root) successfully updated with new stats and matrix.")
     return True
 
 def main():
