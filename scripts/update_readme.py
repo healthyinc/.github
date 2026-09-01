@@ -277,6 +277,10 @@ def fetch_live_stats(token):
         if activity and len(activity) == 52:
             for i in range(52):
                 weekly_activity[i] += activity[i]
+
+    if total_commits_lifetime == 0 or len(repo_names) < 10:
+        print(f"ERROR: Telemetry fetch incomplete (found {len(repo_names)} repos, {total_commits_lifetime} commits). Aborting update to protect existing profile stats.", file=sys.stderr)
+        return None
                 
     return {
         "total_repos": total_repos,
