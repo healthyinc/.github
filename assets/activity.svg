@@ -2,13 +2,13 @@
   <rect width="850" height="220" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
   <text x="30" y="32" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700">Organization Activity History (Last 52 Weeks)</text>
   <g fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">
-    <text x="30" y="55">345</text>
+    <text x="30" y="55">349</text>
     <line x1="60" y1="52" x2="810" y2="52" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="85">258</text>
+    <text x="30" y="85">261</text>
     <line x1="60" y1="82" x2="810" y2="82" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="115">172</text>
+    <text x="30" y="115">174</text>
     <line x1="60" y1="112" x2="810" y2="112" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="145">86</text>
+    <text x="30" y="145">87</text>
     <line x1="60" y1="142" x2="810" y2="142" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
     <text x="30" y="175">0</text>
     <line x1="60" y1="172" x2="810" y2="172" stroke="#30363d" stroke-width="1.5"/>
@@ -25,29 +25,30 @@
     <rect x="308.0" y="168.9" width="10" height="3.1" fill="#39d353" rx="1"/>
     <rect x="322.0" y="168.9" width="10" height="3.1" fill="#39d353" rx="1"/>
     <rect x="350.0" y="171.0" width="10" height="1.0" fill="#39d353" rx="1"/>
-    <rect x="476.0" y="166.4" width="10" height="5.6" fill="#39d353" rx="1"/>
-    <rect x="490.0" y="160.9" width="10" height="11.1" fill="#39d353" rx="1"/>
-    <rect x="504.0" y="164.0" width="10" height="8.0" fill="#39d353" rx="1"/>
-    <rect x="518.0" y="106.6" width="10" height="65.4" fill="#39d353" rx="1"/>
-    <rect x="532.0" y="118.8" width="10" height="53.2" fill="#39d353" rx="1"/>
-    <rect x="546.0" y="161.6" width="10" height="10.4" fill="#39d353" rx="1"/>
-    <rect x="560.0" y="168.5" width="10" height="3.5" fill="#39d353" rx="1"/>
-    <rect x="574.0" y="124.0" width="10" height="48.0" fill="#39d353" rx="1"/>
+    <rect x="462.0" y="171.0" width="10" height="1.0" fill="#39d353" rx="1"/>
+    <rect x="476.0" y="167.5" width="10" height="4.5" fill="#39d353" rx="1"/>
+    <rect x="490.0" y="157.9" width="10" height="14.1" fill="#39d353" rx="1"/>
+    <rect x="504.0" y="159.3" width="10" height="12.7" fill="#39d353" rx="1"/>
+    <rect x="518.0" y="103.6" width="10" height="68.4" fill="#39d353" rx="1"/>
+    <rect x="532.0" y="131.1" width="10" height="40.9" fill="#39d353" rx="1"/>
+    <rect x="546.0" y="161.7" width="10" height="10.3" fill="#39d353" rx="1"/>
+    <rect x="560.0" y="164.1" width="10" height="7.9" fill="#39d353" rx="1"/>
+    <rect x="574.0" y="109.1" width="10" height="62.9" fill="#39d353" rx="1"/>
     <rect x="588.0" y="52.0" width="10" height="120.0" fill="#39d353" rx="1"/>
-    <rect x="602.0" y="96.9" width="10" height="75.1" fill="#39d353" rx="1"/>
+    <rect x="602.0" y="119.0" width="10" height="53.0" fill="#39d353" rx="1"/>
     <rect x="616.0" y="169.9" width="10" height="2.1" fill="#39d353" rx="1"/>
-    <rect x="630.0" y="166.1" width="10" height="5.9" fill="#39d353" rx="1"/>
-    <rect x="644.0" y="118.1" width="10" height="53.9" fill="#39d353" rx="1"/>
-    <rect x="658.0" y="128.9" width="10" height="43.1" fill="#39d353" rx="1"/>
-    <rect x="672.0" y="113.2" width="10" height="58.8" fill="#39d353" rx="1"/>
-    <rect x="686.0" y="65.2" width="10" height="106.8" fill="#39d353" rx="1"/>
-    <rect x="700.0" y="90.6" width="10" height="81.4" fill="#39d353" rx="1"/>
-    <rect x="714.0" y="85.4" width="10" height="86.6" fill="#39d353" rx="1"/>
+    <rect x="630.0" y="164.8" width="10" height="7.2" fill="#39d353" rx="1"/>
+    <rect x="644.0" y="111.1" width="10" height="60.9" fill="#39d353" rx="1"/>
+    <rect x="658.0" y="133.1" width="10" height="38.9" fill="#39d353" rx="1"/>
+    <rect x="672.0" y="92.6" width="10" height="79.4" fill="#39d353" rx="1"/>
+    <rect x="686.0" y="73.3" width="10" height="98.7" fill="#39d353" rx="1"/>
+    <rect x="700.0" y="83.6" width="10" height="88.4" fill="#39d353" rx="1"/>
+    <rect x="714.0" y="105.6" width="10" height="66.4" fill="#39d353" rx="1"/>
   </g>
   <g transform="translate(60, 192)" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">
     <text x="0">1 Year Ago</text>
     <text x="375" text-anchor="middle">6 Months Ago</text>
     <text x="750" text-anchor="end">Now</text>
   </g>
-  <text x="30" y="215" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-09-01 20:19:16 UTC</text>
+  <text x="30" y="215" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-09-02 02:02:42 UTC</text>
 </svg>
