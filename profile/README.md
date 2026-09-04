@@ -23,6 +23,21 @@ Habitcoin’s incentive model, driven by data validation, participation rewards,
 
 ---
 
+## Scientific R&D & Subsidiary Division: Healthy Research Labs
+
+All academic grant initiatives, hospital reinforcement learning validation, and exploratory physical AI research are conducted within Healthy Inc.'s dedicated subsidiary research organization:
+
+> **Organization:** [Healthy Research Labs (`@healthyinc-labs`)](https://github.com/healthyinc-labs)  
+> **Role:** Official Scientific R&D, Clinical Validation & Federal Grants Subsidiary of Healthy Inc.  
+> **Core Focus:**
+> - Federal Grants (NSF/NIH SBIR/STTR) and empirical data validation pipelines.
+> - Hospital reinforcement learning models for inpatient care coordination and IDO agent benchmarking.
+> - Physical AI, wearable biosensor fusion, and edge physiological compute.
+> 
+> [Explore Healthy Research Labs Repositories](https://github.com/healthyinc-labs)
+
+---
+
 ## 🏛️ Anonymized Enterprise Capability Matrix (Private Execution Telemetry)
 
 <!-- START_MATRIX -->
