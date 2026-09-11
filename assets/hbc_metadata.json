@@ -1,0 +1,34 @@
+{
+  "name": "Habitcoin",
+  "symbol": "HBC",
+  "description": "Habitcoin (HBC) is the sovereign health incentive and clinical attestation token of the Healthy Inc. ecosystem.",
+  "image": "https://raw.githubusercontent.com/healthyinc/.github/main/assets/hbc_logo.png",
+  "decimals": 9,
+  "attributes": [
+    {
+      "trait_type": "Ecosystem",
+      "value": "Healthy Inc."
+    },
+    {
+      "trait_type": "Network",
+      "value": "Solana Devnet"
+    },
+    {
+      "trait_type": "Standard",
+      "value": "SPL-Token"
+    },
+    {
+      "trait_type": "Decimals",
+      "value": "9"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://raw.githubusercontent.com/healthyinc/.github/main/assets/hbc_logo.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}
