@@ -2,51 +2,50 @@
   <rect width="850" height="220" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
   <text x="30" y="32" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700">Organization Activity History (Last 52 Weeks)</text>
   <g fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">
-    <text x="30" y="55">616</text>
+    <text x="30" y="55">548</text>
     <line x1="60" y1="52" x2="810" y2="52" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="85">462</text>
+    <text x="30" y="85">411</text>
     <line x1="60" y1="82" x2="810" y2="82" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="115">308</text>
+    <text x="30" y="115">274</text>
     <line x1="60" y1="112" x2="810" y2="112" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
-    <text x="30" y="145">154</text>
+    <text x="30" y="145">137</text>
     <line x1="60" y1="142" x2="810" y2="142" stroke="#21262d" stroke-width="1" stroke-dasharray="2 2"/>
     <text x="30" y="175">0</text>
     <line x1="60" y1="172" x2="810" y2="172" stroke="#30363d" stroke-width="1.5"/>
   </g>
   <g transform="translate(60, 0)">
     <rect x="14.0" y="171.8" width="10" height="0.2" fill="#39d353" rx="1"/>
-    <rect x="28.0" y="171.4" width="10" height="0.6" fill="#39d353" rx="1"/>
-    <rect x="42.0" y="171.2" width="10" height="0.8" fill="#39d353" rx="1"/>
-    <rect x="56.0" y="171.4" width="10" height="0.6" fill="#39d353" rx="1"/>
-    <rect x="196.0" y="170.2" width="10" height="1.8" fill="#39d353" rx="1"/>
-    <rect x="210.0" y="170.4" width="10" height="1.6" fill="#39d353" rx="1"/>
-    <rect x="224.0" y="171.8" width="10" height="0.2" fill="#39d353" rx="1"/>
-    <rect x="238.0" y="171.4" width="10" height="0.6" fill="#39d353" rx="1"/>
-    <rect x="364.0" y="169.9" width="10" height="2.1" fill="#39d353" rx="1"/>
+    <rect x="28.0" y="171.1" width="10" height="0.9" fill="#39d353" rx="1"/>
+    <rect x="42.0" y="171.3" width="10" height="0.7" fill="#39d353" rx="1"/>
+    <rect x="56.0" y="171.3" width="10" height="0.7" fill="#39d353" rx="1"/>
+    <rect x="196.0" y="170.0" width="10" height="2.0" fill="#39d353" rx="1"/>
+    <rect x="210.0" y="170.0" width="10" height="2.0" fill="#39d353" rx="1"/>
+    <rect x="238.0" y="171.3" width="10" height="0.7" fill="#39d353" rx="1"/>
+    <rect x="364.0" y="168.5" width="10" height="3.5" fill="#39d353" rx="1"/>
     <rect x="378.0" y="165.0" width="10" height="7.0" fill="#39d353" rx="1"/>
-    <rect x="392.0" y="167.3" width="10" height="4.7" fill="#39d353" rx="1"/>
-    <rect x="406.0" y="137.5" width="10" height="34.5" fill="#39d353" rx="1"/>
-    <rect x="420.0" y="140.1" width="10" height="31.9" fill="#39d353" rx="1"/>
-    <rect x="434.0" y="166.2" width="10" height="5.8" fill="#39d353" rx="1"/>
-    <rect x="448.0" y="170.2" width="10" height="1.8" fill="#39d353" rx="1"/>
-    <rect x="462.0" y="150.4" width="10" height="21.6" fill="#39d353" rx="1"/>
-    <rect x="476.0" y="108.7" width="10" height="63.3" fill="#39d353" rx="1"/>
-    <rect x="490.0" y="122.3" width="10" height="49.7" fill="#39d353" rx="1"/>
-    <rect x="504.0" y="169.1" width="10" height="2.9" fill="#39d353" rx="1"/>
-    <rect x="518.0" y="169.9" width="10" height="2.1" fill="#39d353" rx="1"/>
-    <rect x="532.0" y="143.8" width="10" height="28.2" fill="#39d353" rx="1"/>
-    <rect x="546.0" y="147.1" width="10" height="24.9" fill="#39d353" rx="1"/>
-    <rect x="560.0" y="141.6" width="10" height="30.4" fill="#39d353" rx="1"/>
-    <rect x="574.0" y="112.2" width="10" height="59.8" fill="#39d353" rx="1"/>
-    <rect x="588.0" y="130.1" width="10" height="41.9" fill="#39d353" rx="1"/>
-    <rect x="602.0" y="119.2" width="10" height="52.8" fill="#39d353" rx="1"/>
-    <rect x="616.0" y="134.4" width="10" height="37.6" fill="#39d353" rx="1"/>
-    <rect x="630.0" y="80.6" width="10" height="91.4" fill="#39d353" rx="1"/>
-    <rect x="644.0" y="133.4" width="10" height="38.6" fill="#39d353" rx="1"/>
-    <rect x="658.0" y="142.2" width="10" height="29.8" fill="#39d353" rx="1"/>
-    <rect x="672.0" y="152.1" width="10" height="19.9" fill="#39d353" rx="1"/>
-    <rect x="686.0" y="161.3" width="10" height="10.7" fill="#39d353" rx="1"/>
-    <rect x="700.0" y="151.0" width="10" height="21.0" fill="#39d353" rx="1"/>
+    <rect x="392.0" y="167.0" width="10" height="5.0" fill="#39d353" rx="1"/>
+    <rect x="406.0" y="130.8" width="10" height="41.2" fill="#39d353" rx="1"/>
+    <rect x="420.0" y="138.5" width="10" height="33.5" fill="#39d353" rx="1"/>
+    <rect x="434.0" y="165.4" width="10" height="6.6" fill="#39d353" rx="1"/>
+    <rect x="448.0" y="169.8" width="10" height="2.2" fill="#39d353" rx="1"/>
+    <rect x="462.0" y="141.8" width="10" height="30.2" fill="#39d353" rx="1"/>
+    <rect x="476.0" y="96.5" width="10" height="75.5" fill="#39d353" rx="1"/>
+    <rect x="490.0" y="124.7" width="10" height="47.3" fill="#39d353" rx="1"/>
+    <rect x="504.0" y="170.7" width="10" height="1.3" fill="#39d353" rx="1"/>
+    <rect x="518.0" y="168.3" width="10" height="3.7" fill="#39d353" rx="1"/>
+    <rect x="532.0" y="138.1" width="10" height="33.9" fill="#39d353" rx="1"/>
+    <rect x="546.0" y="144.8" width="10" height="27.2" fill="#39d353" rx="1"/>
+    <rect x="560.0" y="135.0" width="10" height="37.0" fill="#39d353" rx="1"/>
+    <rect x="574.0" y="104.6" width="10" height="67.4" fill="#39d353" rx="1"/>
+    <rect x="588.0" y="120.8" width="10" height="51.2" fill="#39d353" rx="1"/>
+    <rect x="602.0" y="117.5" width="10" height="54.5" fill="#39d353" rx="1"/>
+    <rect x="616.0" y="123.6" width="10" height="48.4" fill="#39d353" rx="1"/>
+    <rect x="630.0" y="68.9" width="10" height="103.1" fill="#39d353" rx="1"/>
+    <rect x="644.0" y="138.1" width="10" height="33.9" fill="#39d353" rx="1"/>
+    <rect x="658.0" y="137.8" width="10" height="34.2" fill="#39d353" rx="1"/>
+    <rect x="672.0" y="150.1" width="10" height="21.9" fill="#39d353" rx="1"/>
+    <rect x="686.0" y="157.1" width="10" height="14.9" fill="#39d353" rx="1"/>
+    <rect x="700.0" y="131.5" width="10" height="40.5" fill="#39d353" rx="1"/>
     <rect x="714.0" y="52.0" width="10" height="120.0" fill="#39d353" rx="1"/>
   </g>
   <g transform="translate(60, 192)" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">
@@ -54,5 +53,5 @@
     <text x="375" text-anchor="middle">6 Months Ago</text>
     <text x="750" text-anchor="end">Now</text>
   </g>
-  <text x="30" y="215" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-10-26 22:11:03 UTC</text>
+  <text x="30" y="215" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10">Last updated: 2026-10-27 02:57:48 UTC</text>
 </svg>
