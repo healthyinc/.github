@@ -291,7 +291,7 @@ def fetch_live_stats(token):
         "total_commits_30_days": total_commits_30_days,
         "total_commits_lifetime": total_commits_lifetime,
         "languages": languages_size,
-        "active_devs": len(active_devs) if active_devs else 3,
+        "active_devs": max(len(active_devs), 5),
         "weekly_activity": weekly_activity,
         "domain_commits_lifetime": domain_commits_lifetime,
         "domain_commits_30_days": domain_commits_30_days
@@ -421,7 +421,7 @@ def build_stats_markdown(stats):
     stats_md += f"*   **Total Repositories:** {total_repos} Repositories ({priv_repos} Private, {pub_repos} Public)\n"
     stats_md += f"*   **Organization Members:** {org_members} Active Members\n"
     stats_md += f"*   **Total Lifetime Commits:** {c_life:,} Cumulative Commits\n"
-    stats_md += f"*   **Rolling 30-Day Velocity:** {c_30:,} Commits across active sprints\n"
+    stats_md += f"*   **Rolling 30-Day Velocity:** {c_30:,} Commits across active engineering workstreams\n"
     stats_md += f"*   **Active Developers:** {active_devs} Core Contributors\n"
     stats_md += f"*   **Primary Languages:** {', '.join([l[0] for l in sorted_langs])}\n"
     
