@@ -1,15 +1,23 @@
 name: Update Organization Profile README
 
 on:
+  pull_request:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'README.md'
+      - 'profile/README.md'
+      - 'assets/*.svg'
   schedule:
-    - cron: '0 */6 * * *' # Run every 6 hours
-  workflow_dispatch: # Allow manual 1-click trigger
+    - cron: '17 5,17 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   update-profile-readme:
@@ -18,30 +26,30 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set Up Python Runtime
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.12'
 
-      - name: Execute Update Script
+      - name: Verify Telemetry Pipeline Unit Tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Execute Telemetry Update Script
         env:
           ORG_PROFILE_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [ -f scripts/update_readme.py ]; then
-            python scripts/update_readme.py
-          elif [ -f .github/scripts/update_readme.py ]; then
-            python .github/scripts/update_readme.py
-          fi
+        run: python scripts/update_readme.py
 
-      - name: Commit and Push Changes
+      - name: Commit and Push Updated Profile Assets
+        if: github.event_name != 'pull_request'
         run: |
           git config --global user.name "healthy-autopilot[bot]"
           git config --global user.email "healthy-autopilot[bot]@users.noreply.github.com"
-          git add .
+          git add README.md profile/README.md assets/
           if ! git diff-index --quiet HEAD --; then
-            git commit -m "chore: dynamically update organization profile statistics [skip ci]"
-            git push
+            git commit -m "chore(profile): refresh organization telemetry and activity charts [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
           else
-            echo "No changes in statistics since last update."
+            echo "No changes in organization statistics since last update."
           fi
